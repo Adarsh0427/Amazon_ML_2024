@@ -141,14 +141,14 @@ entity_unit_map = {
 ```
 
 
-##Solution
+## Solution
 
 The system comprises of a Filter classifier, which boost the image processing task by 
 filtering out images without dimensional attributes; an OCR engine to extract texts from the image; a 
 Parser to parse measurement values from the words de- tected by OCR and finally a model 
 (Bounding-Box classi- fier) to classify the OCR-texts as a dimensional attribute.
 ```
-## Filter Classifier: Filtration of images without dimensional information
+Filter Classifier: Filtration of images without dimensional information
 Since one product may have multiple images and not all images have dimensional description. 
 Hence, application of the extraction algorithm on all images is highly ineffi- cient and unnecessary. 
 To reduce the OCR induced cost, we trained a MobileNetV3-L architecture to predict a binary output if 
